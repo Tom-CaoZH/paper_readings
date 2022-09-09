@@ -28,3 +28,33 @@ Three pass reading : [How to read a paper](http://svr-sk818-web.cl.cam.ac.uk/kes
     **Stage** : 1/3
 
     **Description** : K-V separation in LSM-tree to reduce amplification .
+
+4. [Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines](https://www.cs.utah.edu/~lifeifei/papers/leaper.pdf)
+
+    **Stage** : 0/3
+
+    **Description** : TODO
+
+## HTAP DB
+
+1. [HTAP Databases: What is New and What is Next](https://dl.acm.org/doi/pdf/10.1145/3514221.3522565)
+
+    **Stage** : 1/3
+
+    **Description** : Introduce the current HTAP DB and its techniques.Also introduce a general benchmark to measure the performance.At last, talk about the problems and opportunities.
+
+    **else** : [A good talk by the author](https://www.bilibili.com/video/BV1wG411b7MC?spm_id_from=333.999.0.0&vd_source=df2eedf5daace6347e6a77a465314b50). [An article that summarizes this](https://zhuanlan.zhihu.com/p/559365164)
+
+
+## Cloud-Native DB
+
+### General:
+
+[A good course](https://www.cs.purdue.edu/homes/csjgwang/CloudNativeDB/)
+
+
+## Useful talks
+
+1. [Cloud Data Warehousing: Snowflake and Beyond](https://www.bilibili.com/video/BV1p54y1p7rY?vd_source=df2eedf5daace6347e6a77a465314b50) 
+    
+    **Description** : Talk about the details about Snowflake and introduce some exciting ideas about cloud DB research.

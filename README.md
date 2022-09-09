@@ -3,6 +3,8 @@ Keep track of the papers I have read and to be read
 
 Three pass reading : [How to read a paper](http://svr-sk818-web.cl.cam.ac.uk/keshav/papers/07/paper-reading.pdf)
 
+More detailed methods : [skills about reading papers](https://blog.shunzi.tech/post/paper-read-and-write/)
+
 ## kv-storage
 
 1. [PebblesDB: Building Key-Value Stores using Fragmented Log-Structured Merge Trees](https://www.cs.utexas.edu/~vijay/papers/sosp17-pebblesdb.pdf)

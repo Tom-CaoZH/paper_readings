@@ -33,9 +33,16 @@ More detailed methods : [skills about reading papers](https://blog.shunzi.tech/p
 
 4. [Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines](https://www.cs.utah.edu/~lifeifei/papers/leaper.pdf)
 
-    **Stage** : 0/3
+    **Stage** : 1/3
 
-    **Description** : TODO
+    **Description** : Introduce offline learned modle and online inferrence to get the hot/cold range then get 
+    the related blocks.
+
+5. [Revisiting Data Prefetching for Database Systems with Machine Learning Techniques](https://ieeexplore.ieee.org/document/9458930)
+
+    **Stage** : 1/3
+
+    **Description** : Devise a Multi-Model framework depends neural network to optimize random accesses by transactions.
 
 ## HTAP DB
 
@@ -53,6 +60,28 @@ More detailed methods : [skills about reading papers](https://blog.shunzi.tech/p
 ### General:
 
 [A good course](https://www.cs.purdue.edu/homes/csjgwang/CloudNativeDB/)
+
+
+## File System
+
+1. [DESIGN AND IMPLEMENTATION OF THE SUN NETWORK FILESYSTEM](https://www.cs.ucf.edu/~eurip/papers/sandbergnfs.pdf)
+
+    **Stage** : 1/3
+
+    **Description** : **v2/v3** adopt stateless which means it's up to client to save the state of each operation(file handler), the drawback of this way lays on that when one client remove a file then the server have no idea whether there are other clients using the removed file , so when the clients which hold the fh of the removed file want to operate on the file, there will be an error, the solution is to add a variabe called generation to record the version, when operate on a out-of-date file ,there will be a warning which will not cause a security problem. **v4** adopt stateful method which is not mentioned in this paper.
+
+    * client : In the OS kernel, there is a client which is responsible for the RPC , and in v2/v3 it will get file handler(fh) to record the state.
+
+    * server: add VFS and Vnode interface, more general.
+
+    * else : 
+        * need to write data to disk while in local env we only need to write cache.(write-through)
+
+2. [GFS](https://pdos.csail.mit.edu/6.824/papers/gfs.pdf)
+
+    **Stage** : 0/3
+
+    **Description** : TODO
 
 
 ## Useful talks

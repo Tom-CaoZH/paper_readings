@@ -79,9 +79,26 @@ More detailed methods : [skills about reading papers](https://blog.shunzi.tech/p
 
 2. [GFS](https://pdos.csail.mit.edu/6.824/papers/gfs.pdf)
 
-    **Stage** : 0/3
+    **Stage** : 1/3
 
-    **Description** : TODO
+    **Description** : large files ,read more ,write less ,modify less ,append more. Generally, a file has three replics distributed in different chunkservers(for hotter file , the replicas will be more)
+    
+    * master : store the MetaData. The chunk handles a file contains and so on...
+    * chunkserver : constains a lots of chunks , each chunk has a chunk handle(uint64_t). 
+    * read : the client firstly read from the master to get the metaData. Then go the closest chunserver to get the data, if this one is not working then go to the other two.
+    * write : relax consistency model, only one of the replicas(primary) has the right to write(lease from the master). two phases. Data flow and control flow are seperated.
+        * first : data flow , no order between chunkservers. 
+        * second : control flow , ordered. primary to other chunkservers
+    ```
+    Data flow :
+    client ---> chunkserver1 ---> chunkserver2 ---> chunkserver3 ....
+
+    Control flow : 
+    client ---> primary ---> other chunkservers ---> when all finish primary return finish to client
+
+    ```
+    
+    **else** : HDFS is the open-source version of GFS.
 
 
 ## Useful talks

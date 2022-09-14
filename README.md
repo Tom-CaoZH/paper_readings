@@ -47,6 +47,14 @@ More detailed methods : [skills about reading papers](https://blog.shunzi.tech/p
 
     **Description** : Devise a Multi-Model framework depends neural network to optimize random accesses by transactions.
 
+6. [MyRocks: LSM-Tree Database Storage Engine Serving Facebook's Social Graph](https://vldb.org/pvldb/vol13/p3217-matsunobu.pdf)
+
+    **Stage** : 0/3
+
+    **Description** : TODO.
+
+    **else** : [A good article explains this](https://zhuanlan.zhihu.com/p/384489244)
+
 ## HTAP DB
 
 1. [HTAP Databases: What is New and What is Next](https://dl.acm.org/doi/pdf/10.1145/3514221.3522565)

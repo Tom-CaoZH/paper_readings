@@ -31,6 +31,9 @@ More detailed methods : [skills about reading papers](https://blog.shunzi.tech/p
 
     **Description** : K-V separation in LSM-tree to reduce amplification .
 
+    **else** : [An article from cxs introduces this tech used in real products](https://www.skyzh.dev/posts/articles/2021-08-07-lsm-kv-separation-overview/)
+
+
 4. [Leaper: A Learned Prefetcher for Cache Invalidation in LSM-tree based Storage Engines](https://www.cs.utah.edu/~lifeifei/papers/leaper.pdf)
 
     **Stage** : 1/3

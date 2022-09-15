@@ -72,6 +72,16 @@ More detailed methods : [skills about reading papers](https://blog.shunzi.tech/p
 
 [A good course](https://www.cs.purdue.edu/homes/csjgwang/CloudNativeDB/)
 
+### Papers:
+
+1. [CloudJump: Optimizing Cloud Databases for Cloud Storages](https://www.vldb.org/pvldb/vol15/p3432-chen.pdf)
+
+    **Stage** : 0/3
+
+    **Description** : Introduce the challenges when traditinal DB storage switchs to cloud storage. Then propose a frame named CloudJump and apply it to polarDB(B+ tree) and RocksDB(LSM-tree) to show the performance promotion.
+
+    **else** : [A good article by the author](https://zhuanlan.zhihu.com/p/535426034). [An article about cloud storage](https://zhuanlan.zhihu.com/p/548215678)
+
 
 ## File System
 

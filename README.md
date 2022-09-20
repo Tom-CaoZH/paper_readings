@@ -55,6 +55,17 @@ More detailed methods : [skills about reading papers](https://blog.shunzi.tech/p
 
     **else** : [A good article explains this](https://zhuanlan.zhihu.com/p/384489244)
 
+7. [LSM-based Storage Techniques: A Survey](https://arxiv.org/pdf/1812.07527.pdf)
+
+    **Stage** : 1/3
+
+    **Description** : A survey about LSM-tree.
+
+    * History of LSM-tree and basic implementation.
+    * Propose a taxonomy.
+    * Some representive LSM-based NoSql systems.
+    * Refects and identify several outages and oppotunities.
+
 ## HTAP DB
 
 1. [HTAP Databases: What is New and What is Next](https://dl.acm.org/doi/pdf/10.1145/3514221.3522565)
